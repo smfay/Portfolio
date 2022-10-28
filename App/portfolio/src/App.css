@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body,
 html,
 #root {
@@ -8,21 +12,17 @@ html,
   height: 100%;
 }
 
-#render {
+canvas {
   position: fixed;
   width: 100%;
   height: 100%;
-  top: 0;
-  left: 0;
   margin: 0;
-  font-family: 'Work Sans', sans-serif;
 }
 
 #box {
-  padding-left: 2em;
   display: flex;
-  position: absolute;
   flex-wrap: wrap;
+  width: 100%;
   height: 10em;
   flex-direction: column;
   justify-content: center;
@@ -32,10 +32,26 @@ html,
 
 #title {
   color: white;
-  font-size: xx-large;
-  font-weight: 600;
+  font-size: xxx-large;
+  font-weight: 500;
   padding: 0;
   margin: 0;
+}
+
+section {
+  font-weight: 300;
+}
+
+main {
+  padding: 2em;
+  display: flex;
+  position: absolute;
+  flex-wrap: nowrap;
+  height: 10em;
+  flex-direction: column;
+  justify-content: left;
+  z-index: 50;
+  color: white;
 }
 
 #subtitle {
@@ -43,13 +59,19 @@ html,
   font-size: small;
   font-weight: 300;
   padding: 0;
-  padding-left: 1em;
   margin: 0;
-  border-color: white;
-  border-left: solid;
-  border-width: 2px;
 }
 
 body {
   background: black;
+}
+
+.links {
+  padding: 0;
+  transition: all ease 0.5s;
+}
+
+.links:hover {
+  padding-left: 0.5em;
+  color: pink;
 }

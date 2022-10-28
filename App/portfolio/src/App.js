@@ -1,5 +1,5 @@
 import React, { useRef } from 'react';
-import './App.scss';
+import './App.css';
 import noise from './assets/noise.jpg'
 import { Canvas, useFrame } from 'react-three-fiber';
 import { Stars, OrthographicCamera, PerspectiveCamera, OrbitControls, useTexture, softShadows, MeshWobbleMaterial, MeshRefractionMaterial } from '@react-three/drei'
@@ -10,11 +10,11 @@ const SpinningMesh = ({ position, args }) => {
     map: noise,
     displacementMap: noise
   })
-  useFrame(() => (mesh.current.rotation.y = mesh.current.rotation.x += 0.001));
+  useFrame(() => (mesh.current.rotation.Z += 0.001));
   return (
     <mesh position={position} ref={mesh} castShadow receiveShadow >
       <torusKnotGeometry attach='geometry' args={args} />
-      <MeshWobbleMaterial attach='material' metalness={0} roughness={1} color='ORANGE' speed={1} factor={0.5} />
+      <MeshWobbleMaterial attach='material' metalness={0} roughness={1} color='ORANGE' speed={0.8} factor={0.2} />
     </mesh>
   )
 }
@@ -25,7 +25,7 @@ const MiddleMesh = ({ position, args }) => {
     map: noise,
     displacementMap: noise
   })
-  useFrame(() => (mesh.current.rotation.y = mesh.current.rotation.x += 0.001));
+  useFrame(() => (mesh.current.rotation.y = mesh.current.rotation.x += 0.01));
   return (
     <mesh position={position} ref={mesh} castShadow receiveShadow >
       <diamondGeometry attach='geometry' args={args} />
@@ -37,22 +37,28 @@ const MiddleMesh = ({ position, args }) => {
 function App() {
   return (
     <>
-      <div id='box'>
-        <h1 id='title' >Sean|Fay</h1>
-        <p id='subtitle'>
-          Multi-diciplinary<br />designer/<br />web developer
-        </p>
-      </div>
-
-
+      <main>
+        <section class='text-white/50'>
+          <p class='p-0 hover:pl-2 hover:text-white transition-all ease-in-out duration-200'>I N F O</p>
+          <p class='p-0 hover:pl-2 hover:text-white transition-all ease-in-out duration-200'>W O R K S</p>
+          <p class='p-0 hover:pl-2 hover:text-white transition-all ease-in-out duration-200'>G A L L E R Y</p>
+          <p class='p-0 hover:pl-2 hover:text-white transition-all ease-in-out duration-200'>C O N T A C T</p>
+        </section>
+        <div id='box'>
+          <h1 class='font-medium text-3xl md:text-6xl p-0 hover:pl-2 transition-all ease-in-out duration-200' >Sean|Fay</h1>
+          <p class='text-xs md:text-base p-0 hover:pl-2 transition-all ease-in-out duration-200' >
+            multi-diciplinary/<br />UI/UX designer/<br />web developer/
+          </p>
+        </div>
+      </main>
 
       <Canvas id='render'>
-        <PerspectiveCamera makeDefault fov={20} position={[0, 0, 50]} />
+        <PerspectiveCamera makeDefault fov={25} position={[0, 0, 50]} />
         <fog attach="fog" args={["BLACK", 15, 80]} />
         <directionalLight
           castShadow
           position={[10, 0, 0]}
-          intensity={0.2}
+          intensity={0.8}
           shadowMapHeight={1024}
           shadowMapWidth={1024}
           shadowCameraFar={100}
@@ -61,12 +67,12 @@ function App() {
           shadowCameraTop={10}
           shadowCameraBottom={10}
         />
-        <ambientLight intensity={3} color='GREEN' />
+        <ambientLight intensity={2} color='red' />
         <pointLight position={[0, 0, 0]} intensity={1} color='green' />
         <pointLight position={[2, 7, 12]} intensity={0.1} color='yellow' />
         <pointLight position={[5, -20, 12]} intensity={0.1} color='red' />
         <pointLight position={[5, 10, 12]} intensity={10} color='blue' />
-        <SpinningMesh position={[0, 0, -10]} args={[20, 1, 800, 50]} />
+        <SpinningMesh position={[20, 0, -10]} args={[20, 2.5, 800, 50]} />
       </Canvas>
     </>
   );
