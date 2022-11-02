@@ -1,6 +1,6 @@
 import React from 'react'
 import { Outlet, Link } from 'react-router-dom'
-import { useSpring, useTrail, useSpringRef, useChain, useTransition, animated } from 'react-spring';
+import { useSpring, useTrail, useSprings, useChain, useTransition, animated } from 'react-spring';
 import Background3D from '../components/Background3D';
 
 const Layout = () => {
