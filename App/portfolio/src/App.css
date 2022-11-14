@@ -5,6 +5,7 @@
 * {
   scrollbar-width: thin;
   scrollbar-color: white black;
+  color: maroon;
 }
 
 *::-webkit-scrollbar {
@@ -31,8 +32,12 @@ html,
   height: 100%;
 }
 
+#foreground {
+  background: rosybrown;
+}
+
 #title {
-  color: white;
+  color: gold;
   font-size: xxx-large;
   font-weight: 500;
   padding: 0;
@@ -46,17 +51,15 @@ section {
 main {
   padding: 2em;
   display: flex;
-  position: absolute;
-  flex-wrap: nowrap;
+
   height: 10em;
-  flex-direction: column;
-  justify-content: left;
+  justify-content: center;
   z-index: 50;
-  color: white;
+  color: gold;
 }
 
 #subtitle {
-  color: white;
+  color: gold;
   font-size: small;
   font-weight: 300;
   padding: 0;
@@ -64,7 +67,12 @@ main {
 }
 
 body {
-  background: black;
+  background: maroon;
+  color: saddlebrown;
+}
+
+p {
+  color: black
 }
 
 .links {

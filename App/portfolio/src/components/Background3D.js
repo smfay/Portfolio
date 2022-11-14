@@ -19,7 +19,7 @@ const Background3D = () => {
 
     return (
         <Canvas class='w-full h-full'>
-            <PerspectiveCamera makeDefault fov={25} position={[0, 0, 50]} />
+            <PerspectiveCamera makeDefault fov={5} position={[0, 0, 50]} />
             <fog attach="fog" args={["BLACK", 15, 80]} />
             <directionalLight
                 position={[10, 0, 0]}
