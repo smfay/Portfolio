@@ -7,7 +7,13 @@ import Home from './screens/Home'
 function App() {
   return (
     <>
-      <Layout />
+      <Router>
+        <Routes>
+          <Route path="/" element={<Layout />} >
+            <Route index element={<Layout />} />
+          </Route>
+        </Routes>
+      </Router>
     </>
   );
 }
