@@ -38,6 +38,11 @@ html,
   filter: drop-shadow(10px 10px 10px rgb(0,0,0,0.5));
 }
 
+#card-flat {
+  background: rosybrown;
+  border: 1px solid black;
+}
+
 
 
 #foreground {

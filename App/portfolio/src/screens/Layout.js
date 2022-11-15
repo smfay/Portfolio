@@ -31,14 +31,14 @@ const Layout = () => {
 
     return (
         <>
-            <div id='foreground' className='flex flex-wrap content-start justify-start m-6 transition-all duration-700 ease-in-out'>
-                <nav class="z-50">
-                    <section class=' col-span-full w-full h-full flex flex-col content-start'>
-                        <animated.h1 style={props} class='w-1/2 py-1 font-medium text-2xl md:text-4xl' >Sean|Fay</animated.h1>
+            <div id='card-flat' className='flex flex-wrap justify-center m-2 transition-all duration-700 ease-in-out p-1 rounded'>
+                <nav class="z-50 p-3">
+                    <section class=' col-span-full w-full h-full flex flex-col text-center'>
+                        <animated.h1 style={props} class='w-1/2 text-5xl' >Sean|Fay</animated.h1>
                         <ul>
-                            <animated.li style={props} class='py-1 text-xs md:text-sm'>multi-diciplinary/</animated.li>
-                            <animated.li style={props} class='py-1 text-xs md:text-sm'>UI/UX designer/</animated.li>
-                            <animated.li style={props} class='py-1 text-xs md:text-sm'>web developer/</animated.li>
+                            <animated.li style={props} class='text-xs md:text-sm'>multi-diciplinary/</animated.li>
+                            <animated.li style={props} class='text-xs md:text-sm'>UI/UX designer/</animated.li>
+                            <animated.li style={props} class='text-xs md:text-sm'>web developer/</animated.li>
                         </ul>
                     </section>
                 </nav>
