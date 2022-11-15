@@ -35,7 +35,7 @@ const Home = () => {
                 <h2>W O R K S</h2>
                 <section className='items-start w-fit justify-center flex-col'>
                     <div className='flex flex-wrap justify-center items-center w-full'>
-                        <animated.div id='card' style={props} className='m-2 rounded-lg flex flex-col md:flex-row justify-start space-x-2 space-y-2'>
+                        <animated.div id='card' style={props} className='m-2 rounded-lg flex flex-col md:flex-row justify-between'>
                             <header className='w-full md:w-96'>
                                 <h2 className='text-xl font-bold'>GameDev</h2>
                                 <p className=''>Concept demonstration of a procedural animation set applied to a physics based character controller. </p>
@@ -43,7 +43,7 @@ const Home = () => {
                             <video disablePictureInPicture playsInline autoPlay loop muted src='./videos/Game.webm' className='w-full md:w-96'>
                             </video>
                         </animated.div>
-                        <animated.div id='card' style={props} className='m-2 rounded-lg flex flex-col md:flex-row justify-start space-x-2 space-y-2'>
+                        <animated.div id='card' style={props} className='m-2 rounded-lg flex flex-col md:flex-row justify-between'>'
                             <header className='w-full md:w-96'>
                                 <h2 className='text-xl font-bold'>Matter</h2>
                                 <p className=''>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
@@ -52,7 +52,7 @@ const Home = () => {
                         </animated.div>
                     </div>
                 </section>
-            </div>
+            </div >
         </>
     )
 }
