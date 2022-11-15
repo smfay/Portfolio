@@ -7,11 +7,7 @@ import Home from './screens/Home'
 function App() {
   return (
     <>
-      <Router>
-        <Routes>
-          <Route index element={<Layout />} />
-        </Routes>
-      </Router>
+      <Layout />
     </>
   );
 }
