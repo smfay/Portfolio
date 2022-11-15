@@ -31,10 +31,10 @@ const Layout = () => {
 
     return (
         <>
-            <div id='foreground' className='flex flex-wrap content-center justify-center mx-2 md:mx-20 grow'>
-                <nav class="z-50 p-5 ">
-                    <section class=' col-span-full w-full h-full flex flex-col content start'>
-                        <animated.h1 style={props} class='w-1/2 py-1 font-medium text-6xl md:text-8xl' >Sean|Fay</animated.h1>
+            <div id='foreground' className='flex flex-wrap content-start justify-start m-6 transition-all duration-700 ease-in-out'>
+                <nav class="z-50">
+                    <section class=' col-span-full w-full h-full flex flex-col content-start'>
+                        <animated.h1 style={props} class='w-1/2 py-1 font-medium text-2xl md:text-4xl' >Sean|Fay</animated.h1>
                         <ul>
                             <animated.li style={props} class='py-1 text-xs md:text-sm'>multi-diciplinary/</animated.li>
                             <animated.li style={props} class='py-1 text-xs md:text-sm'>UI/UX designer/</animated.li>
