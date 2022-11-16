@@ -35,7 +35,7 @@ const Layout = () => {
                 <nav class="z-50">
                     <section class='w-full flex justify-between'>
                         <div id='card' className='p-3 rounded'>
-                            <h1 class='w-1/2 text-4xl transition-all duration-100 ease-in-out' >Sean|Fay</h1>
+                            <h1 class='w-1/2 text-6xl font-medium transition-all duration-100 ease-in-out' >Sean|Fay</h1>
                             <ul>
                                 <li class='text-xs md:text-sm transition-all duration-100 ease-in-out'>multi-diciplinary/</li>
                                 <li class='text-xs md:text-sm transition-all duration-200 ease-in-out'>UI/UX designer/</li>
@@ -43,14 +43,14 @@ const Layout = () => {
                             </ul>
                         </div>
                         <span className=''>
-                            <animated.img id='card' style={props} src='https://smfay.github.io/portfolio/images/logo.png' alt="logo" className='h-20 md:h-32 transition-all duration-500 ease-in-out p-3 rounded' />
+                            <animated.img style={props} src='https://smfay.github.io/portfolio/images/logo.svg' alt="logo" className='h-20 md:h-32 transition-all duration-500 ease-in-out p-3 rounded' />
                         </span>
                     </section>
                 </nav>
                 <Home className='z-50' />
-                {/* <div class="fixed -z-50 left-0 top-0 flex w-screen h-48 fixed overflow-hidden">
-                <Background3D />
-            </div> */}
+                <div class="fixed -z-50 left-0 top-0 flex w-screen h-screen fixed overflow-hidden">
+                    <Background3D />
+                </div>
             </animated.div>
         </>
     )
