@@ -31,18 +31,20 @@ const Layout = () => {
 
     return (
         <>
-            <div id='foreground' className='flex flex-wrap justify-start m-2 md:mx-10 lg:mx-32 w-full transition-all duration-700 ease-in-out p-1 rounded'>
+            <div id='foreground' className='flex flex-col justify-start m-2 md:mx-10 lg:mx-32 w-fit transition-all duration-700 ease-in-out p-1 rounded'>
                 <nav class="z-50 p-3">
-                    <section class=' col-span-full w-full h-full flex flex-col'>
-                        <span className='flex w-full justify-between'>
+                    <section class='w-full flex justify-between'>
+                        <div>
                             <animated.h1 style={props} class='w-1/2 text-3xl' >Sean|Fay</animated.h1>
-                            <img src='https://smfay.github.io/portfolio/images/logo.png' alt="logo" className='' />
+                            <ul>
+                                <animated.li style={props} class='text-xs md:text-sm'>multi-diciplinary/</animated.li>
+                                <animated.li style={props} class='text-xs md:text-sm'>UI/UX designer/</animated.li>
+                                <animated.li style={props} class='text-xs md:text-sm'>web developer/</animated.li>
+                            </ul>
+                        </div>
+                        <span className=''>
+                            <img src='https://smfay.github.io/portfolio/images/logo.png' alt="logo" className='h-16' />
                         </span>
-                        <ul>
-                            <animated.li style={props} class='text-xs md:text-sm'>multi-diciplinary/</animated.li>
-                            <animated.li style={props} class='text-xs md:text-sm'>UI/UX designer/</animated.li>
-                            <animated.li style={props} class='text-xs md:text-sm'>web developer/</animated.li>
-                        </ul>
                     </section>
                 </nav>
                 <Home className='z-50' />
