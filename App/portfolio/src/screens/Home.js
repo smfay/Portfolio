@@ -14,7 +14,7 @@ const Home = () => {
                             <p className=''>A 2D physics controller built for a personal project. By animating this procedurally, it gains context awareness that wouldn't be possible when animating manually. </p>
                         </header>
                         <section id='card' className='overflow-hidden flex m-2 rounded max-h-96'>
-                            <video width='500' height='500' disablePictureInPicture playsInline autoPlay loop muted src='https://smfay.github.io/portfolio/videos/Game.webm' className='object-cover grow'>
+                            <video width='400' height='400' disablePictureInPicture playsInline autoPlay loop muted src='https://smfay.github.io/portfolio/videos/Game.webm' className='object-cover grow'>
                             </video>
                         </section>
                     </div>
