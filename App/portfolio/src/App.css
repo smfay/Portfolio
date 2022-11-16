@@ -5,7 +5,7 @@
 * {
   scrollbar-width: thin;
   scrollbar-color: white black;
-  color: black;
+  color: white;
 }
 
 *::-webkit-scrollbar {
@@ -33,20 +33,21 @@ html,
 }
 
 #card {
-  background: rosybrown;
-  /* border: 2px solid black; */
-  filter: drop-shadow(10px 10px 10px rgb(0,0,0,0.5));
+  background: black;
+  border: 1px solid gray;
+  filter: drop-shadow(20px 20px 10px rgb(0,0,0,1));
 }
 
 #card-flat {
-  background: rosybrown;
+  background: black;
   border: 1px solid black;
 }
 
 
 
 #foreground {
-  background: rosybrown;
+  background: black;
+  /* border: 1px solid white; */
 }
 
 #title {
@@ -81,12 +82,12 @@ main {
 }
 
 body {
-  background: rosybrown;
-  color: black;
+  background: black;
+  color: white;
 }
 
 p {
-  color: black
+  color: white
 }
 
 .links {
