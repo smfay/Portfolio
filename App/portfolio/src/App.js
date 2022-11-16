@@ -7,7 +7,7 @@ import Home from './screens/Home'
 function App() {
   return (
     <>
-      <Layout className='w-screen overflow-x-hidden' />
+      <Layout className="w-screen overflow-x-hidden bg-[url('https://smfay.github.io/portfolio/images/bg.png')]" />
     </>
   );
 }

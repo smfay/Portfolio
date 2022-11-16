@@ -7,9 +7,9 @@ import Home from './Home'
 const Layout = () => {
     const props = useSpring({
         from: {
-            scale: 0.8,
-            translateX: 0,
-            translateY: -600,
+            scale: 0,
+            translateX: -10,
+            translateY: 0,
             opacity: -10,
             skewX: 0,
         },
@@ -22,20 +22,20 @@ const Layout = () => {
         },
         delay: 10,
         config: {
-            precision: 0.0001,
-            bounce: 0,
-            tension: 100,
-            damping: 10,
+            precision: 500,
+            bounce: 10,
+            tension: 20,
+            damping: 100,
         },
     })
 
     return (
         <>
-            <animated.div style={props} id='foreground' className='flex flex-col justify-start m-2 md:mx-10 lg:mx-32 w-fit transition-all ease-in-out p-1 rounded'>
+            <animated.div style={props} id='foreground' className='flex flex-col justify-start m-2 md:mx-10 lg:mx-32 w-fit transition-all duration-700 ease-in-out p-1 rounded'>
                 <nav class="z-50 p-3">
                     <section class='w-full flex justify-between'>
                         <div>
-                            <h1 class='w-1/2 text-3xl transition-all duration-100 ease-in-out' >Sean|Fay</h1>
+                            <h1 class='w-1/2 text-4xl transition-all duration-100 ease-in-out' >Sean|Fay</h1>
                             <ul>
                                 <li class='text-xs md:text-sm transition-all duration-100 ease-in-out'>multi-diciplinary/</li>
                                 <li class='text-xs md:text-sm transition-all duration-200 ease-in-out'>UI/UX designer/</li>
@@ -43,7 +43,7 @@ const Layout = () => {
                             </ul>
                         </div>
                         <span className=''>
-                            <animated.img style={props} src='https://smfay.github.io/portfolio/images/logo.png' alt="logo" className='h-16 md:h-20 transition-all duration-100 ease-in-out' />
+                            <animated.img style={props} src='https://smfay.github.io/portfolio/images/logo.png' alt="logo" className='h-16 md:h-20 transition-all duration-500 ease-in-out' />
                         </span>
                     </section>
                 </nav>
