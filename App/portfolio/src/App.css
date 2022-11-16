@@ -33,9 +33,10 @@ html,
 }
 
 #card {
-  background: rgb(0,0,0,0.8);
-  border: 1px solid gray;
-  filter: drop-shadow(20px 20px 10px rgb(0,0,0,0.8));
+  background: rgb(0,0,0,0.2);
+  border: 1px solid rgb(255,255,255,0.1);
+  filter: drop-shadow(0px 10px 20px black);
+  box-shadow: inset 0px -20px 30px #001C18;
 }
 
 #card-flat {

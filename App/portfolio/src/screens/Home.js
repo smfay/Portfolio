@@ -6,7 +6,7 @@ const Home = () => {
     return (
         <>
             <div className='text-left p-1'>
-                <h2 id='card' className='rounded my-3 p-2'>W O R K S :</h2>
+                <h2 className='rounded my-3 p-2'>W O R K S :</h2>
                 <section className='grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-2 auto-rows-max'>
                     <div id='card' className='grid grid-cols-1 md:grid-cols-2 p-1 rounded'>
                         <header className='m-2'>
