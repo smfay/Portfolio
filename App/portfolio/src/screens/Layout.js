@@ -31,27 +31,27 @@ const Layout = () => {
 
     return (
         <>
-            <animated.div style={props} id='foreground' className='text-black flex flex-col justify-start m-2 md:mx-10 lg:mx-32 w-fit transition-all duration-700 ease-in-out p-1 rounded'>
+            <div id='card' className='overflow-hidden text-black flex flex-col justify-start m-2 md:mx-10 lg:mx-32 w-fit transition-all duration-700 ease-in-out p-1 rounded'>
                 <nav class="z-50">
-                    <section class='w-full flex justify-between'>
-                        <div className='p-3 rounded'>
-                            <h1 class='w-1/2 text-6xl font-medium transition-all duration-100 ease-in-out' >Sean|Fay</h1>
+                    <section class='flex justify-between'>
+                        <div id='card' className='p-3 rounded'>
+                            <h1 class='w-1/2 text-4xl font-medium transition-all duration-100 ease-in-out' >Sean|Fay</h1>
                             <ul>
-                                <li class='text-xl transition-all duration-100 ease-in-out'>multi-diciplinary/</li>
-                                <li class='text-xl transition-all duration-200 ease-in-out'>UI/UX designer/</li>
-                                <li class='text-xl transition-all duration-300 ease-in-out'>web developer/</li>
+                                <li class='transition-all duration-100 ease-in-out'>multi-diciplinary/</li>
+                                <li class='transition-all duration-200 ease-in-out'>UI/UX designer/</li>
+                                <li class='transition-all duration-300 ease-in-out'>web developer/</li>
                             </ul>
                         </div>
                         <span className=''>
-                            <animated.img style={props} src='https://smfay.github.io/portfolio/images/logo.svg' alt="logo" className='h-20 md:h-32 transition-all duration-500 ease-in-out p-3 rounded' />
+                            <animated.img id='card' style={props} src='https://smfay.github.io/portfolio/images/logo.svg' alt="logo" className='h-20 md:h-32 transition-all duration-500 ease-in-out p-3 rounded' />
                         </span>
                     </section>
                 </nav>
                 <Home className='z-50' />
-                <div class="fixed -z-50 left-0 top-0 flex w-screen h-screen fixed overflow-hidden">
+                <div class="fixed -z-50 left-0 top-0 flex w-screen h-screen overflow-hidden">
                     <Background3D />
                 </div>
-            </animated.div>
+            </div>
         </>
     )
 }

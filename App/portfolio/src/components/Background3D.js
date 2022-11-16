@@ -12,7 +12,7 @@ const Background3D = () => {
         return (
             <mesh position={position} ref={mesh} >
                 <torusKnotGeometry attach='geometry' args={args} />
-                <MeshWobbleMaterial attach='material' metalness={0} roughness={1} color='orange' speed={0.8} factor={0.2} />
+                <MeshWobbleMaterial attach='material' metalness={0} roughness={1} color='rgb(220,220,220)' speed={0.8} factor={0.2} />
             </mesh>
         )
     }
@@ -20,16 +20,15 @@ const Background3D = () => {
     return (
         <Canvas class='w-full h-full'>
             <PerspectiveCamera makeDefault fov={25} position={[0, 0, 50]} />
-            <fog attach="fog" args={["#B33C1D", 15, 80]} />
+            <fog attach="fog" args={["rgb(220,220,220)", 30, 80]} />
             <directionalLight
                 position={[10, 0, 0]}
                 intensity={0.8}
+                color='pink'
             />
-            <ambientLight intensity={2} color='red' />
-            <pointLight position={[0, 0, 0]} intensity={1} color='green' />
-            <pointLight position={[2, 7, 12]} intensity={0.1} color='yellow' />
-            <pointLight position={[5, -20, 12]} intensity={0.1} color='red' />
-            <pointLight position={[5, 10, 12]} intensity={10} color='blue' />
+            <ambientLight intensity={0.1} color='orange' />
+            <pointLight position={[0, 0, 0]} intensity={1} color='red' />
+
             <SpinningMesh position={[0, 0, -10]} args={[20, 2.5, 700, 20]} />
         </Canvas>
     )
