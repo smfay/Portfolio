@@ -32,9 +32,9 @@ const Layout = () => {
     return (
         <>
             <animated.div style={props} id='foreground' className='flex flex-col justify-start m-2 md:mx-10 lg:mx-32 w-fit transition-all duration-700 ease-in-out p-1 rounded'>
-                <nav class="z-50 p-3">
+                <nav class="z-50">
                     <section class='w-full flex justify-between'>
-                        <div>
+                        <div id='card' className='p-3 rounded'>
                             <h1 class='w-1/2 text-4xl transition-all duration-100 ease-in-out' >Sean|Fay</h1>
                             <ul>
                                 <li class='text-xs md:text-sm transition-all duration-100 ease-in-out'>multi-diciplinary/</li>
@@ -43,7 +43,7 @@ const Layout = () => {
                             </ul>
                         </div>
                         <span className=''>
-                            <animated.img style={props} src='https://smfay.github.io/portfolio/images/logo.png' alt="logo" className='h-16 md:h-20 transition-all duration-500 ease-in-out' />
+                            <animated.img id='card' style={props} src='https://smfay.github.io/portfolio/images/logo.png' alt="logo" className='h-20 md:h-32 transition-all duration-500 ease-in-out p-3 rounded' />
                         </span>
                     </section>
                 </nav>
