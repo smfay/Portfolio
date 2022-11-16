@@ -7,10 +7,10 @@ import Home from './Home'
 const Layout = () => {
     const props = useSpring({
         from: {
-            scale: 0.2,
+            scale: 0.8,
             translateX: 0,
-            translateY: 0,
-            opacity: 0,
+            translateY: -600,
+            opacity: -10,
             skewX: 0,
         },
         to: {
@@ -24,8 +24,8 @@ const Layout = () => {
         config: {
             precision: 0.0001,
             bounce: 0,
-            tension: 50,
-            damping: 0,
+            tension: 100,
+            damping: 10,
         },
     })
 
