@@ -7,9 +7,9 @@ import Home from './Home'
 const Layout = () => {
     const props = useSpring({
         from: {
-            scale: 2,
-            translateX: 100,
-            translateY: 50,
+            scale: 0.2,
+            translateX: 0,
+            translateY: 0,
             opacity: 0,
             skewX: 0,
         },
@@ -23,7 +23,7 @@ const Layout = () => {
         delay: 10,
         config: {
             precision: 0.0001,
-            bounce: -10,
+            bounce: 0,
             tension: 50,
             damping: 0,
         },
@@ -37,9 +37,9 @@ const Layout = () => {
                         <div>
                             <h1 class='w-1/2 text-3xl transition-all duration-100 ease-in-out' >Sean|Fay</h1>
                             <ul>
-                                <animated.li style={props} class='text-xs md:text-sm transition-all duration-100 ease-in-out'>multi-diciplinary/</animated.li>
-                                <animated.li style={props} class='text-xs md:text-sm transition-all duration-200 ease-in-out'>UI/UX designer/</animated.li>
-                                <animated.li style={props} class='text-xs md:text-sm transition-all duration-300 ease-in-out'>web developer/</animated.li>
+                                <li class='text-xs md:text-sm transition-all duration-100 ease-in-out'>multi-diciplinary/</li>
+                                <li class='text-xs md:text-sm transition-all duration-200 ease-in-out'>UI/UX designer/</li>
+                                <li class='text-xs md:text-sm transition-all duration-300 ease-in-out'>web developer/</li>
                             </ul>
                         </div>
                         <span className=''>
