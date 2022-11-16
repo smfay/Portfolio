@@ -7,7 +7,7 @@ import Home from './screens/Home'
 function App() {
   return (
     <>
-      <Layout />
+      <Layout className='w-screen overflow-x-hidden' />
     </>
   );
 }

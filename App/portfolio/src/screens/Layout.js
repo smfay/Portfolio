@@ -7,11 +7,11 @@ import Home from './Home'
 const Layout = () => {
     const props = useSpring({
         from: {
-            scale: 0,
-            translateX: 300,
+            scale: 2,
+            translateX: 100,
             translateY: 50,
             opacity: 0,
-            skewX: -30,
+            skewX: 0,
         },
         to: {
             scale: 1,
@@ -20,30 +20,30 @@ const Layout = () => {
             opacity: 1,
             skewX: 0,
         },
-        delay: 1000,
+        delay: 10,
         config: {
-            precision: 0.01,
-            bounce: 5,
-            tension: 80,
-            damping: 10,
+            precision: 0.0001,
+            bounce: -10,
+            tension: 50,
+            damping: 0,
         },
     })
 
     return (
         <>
-            <div id='foreground' className='flex flex-col justify-start m-2 md:mx-10 lg:mx-32 w-fit transition-all duration-700 ease-in-out p-1 rounded'>
+            <animated.div style={props} id='foreground' className='flex flex-col justify-start m-2 md:mx-10 lg:mx-32 w-fit transition-all ease-in-out p-1 rounded'>
                 <nav class="z-50 p-3">
                     <section class='w-full flex justify-between'>
                         <div>
-                            <animated.h1 style={props} class='w-1/2 text-3xl' >Sean|Fay</animated.h1>
+                            <h1 class='w-1/2 text-3xl transition-all duration-100 ease-in-out' >Sean|Fay</h1>
                             <ul>
-                                <animated.li style={props} class='text-xs md:text-sm'>multi-diciplinary/</animated.li>
-                                <animated.li style={props} class='text-xs md:text-sm'>UI/UX designer/</animated.li>
-                                <animated.li style={props} class='text-xs md:text-sm'>web developer/</animated.li>
+                                <animated.li style={props} class='text-xs md:text-sm transition-all duration-100 ease-in-out'>multi-diciplinary/</animated.li>
+                                <animated.li style={props} class='text-xs md:text-sm transition-all duration-200 ease-in-out'>UI/UX designer/</animated.li>
+                                <animated.li style={props} class='text-xs md:text-sm transition-all duration-300 ease-in-out'>web developer/</animated.li>
                             </ul>
                         </div>
                         <span className=''>
-                            <img src='https://smfay.github.io/portfolio/images/logo.png' alt="logo" className='h-16' />
+                            <animated.img style={props} src='https://smfay.github.io/portfolio/images/logo.png' alt="logo" className='h-16 md:h-20 transition-all duration-100 ease-in-out' />
                         </span>
                     </section>
                 </nav>
@@ -51,7 +51,7 @@ const Layout = () => {
                 {/* <div class="fixed -z-50 left-0 top-0 flex w-screen h-48 fixed overflow-hidden">
                 <Background3D />
             </div> */}
-            </div>
+            </animated.div>
         </>
     )
 }
