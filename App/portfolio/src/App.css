@@ -5,7 +5,6 @@
 * {
   scrollbar-width: thin;
   scrollbar-color: white black;
-  color: white;
 }
 
 *::-webkit-scrollbar {
@@ -33,10 +32,10 @@ html,
 }
 
 #card {
-  background: rgb(0,0,0,0.2);
-  border: 1px solid rgb(255,255,255,0.1);
-  filter: drop-shadow(0px 10px 20px black);
-  box-shadow: inset 0px -20px 30px #001C18;
+  background: #B87B5A;
+  border: 1px solid rgb(0,0,0,0.8);
+  filter: drop-shadow(5px 5px 10px black);
+  box-shadow: inset 0px -50px 50px rgb(149,66,54,0.8);
 }
 
 #card-flat {
@@ -71,7 +70,6 @@ main {
   flex-direction: column;
   justify-content: center;
   z-index: 50;
-  color: gold;
 }
 
 #subtitle {
@@ -83,12 +81,8 @@ main {
 }
 
 body {
-  background: black;
-  color: white;
-}
-
-p {
-  color: white
+  background: #893319;
+  color:
 }
 
 .links {

@@ -31,15 +31,15 @@ const Layout = () => {
 
     return (
         <>
-            <animated.div style={props} id='foreground' className='flex flex-col justify-start m-2 md:mx-10 lg:mx-32 w-fit transition-all duration-700 ease-in-out p-1 rounded'>
+            <animated.div style={props} id='foreground' className='text-black flex flex-col justify-start m-2 md:mx-10 lg:mx-32 w-fit transition-all duration-700 ease-in-out p-1 rounded'>
                 <nav class="z-50">
                     <section class='w-full flex justify-between'>
                         <div className='p-3 rounded'>
                             <h1 class='w-1/2 text-6xl font-medium transition-all duration-100 ease-in-out' >Sean|Fay</h1>
                             <ul>
-                                <li class='text-xs md:text-sm transition-all duration-100 ease-in-out'>multi-diciplinary/</li>
-                                <li class='text-xs md:text-sm transition-all duration-200 ease-in-out'>UI/UX designer/</li>
-                                <li class='text-xs md:text-sm transition-all duration-300 ease-in-out'>web developer/</li>
+                                <li class='text-xl transition-all duration-100 ease-in-out'>multi-diciplinary/</li>
+                                <li class='text-xl transition-all duration-200 ease-in-out'>UI/UX designer/</li>
+                                <li class='text-xl transition-all duration-300 ease-in-out'>web developer/</li>
                             </ul>
                         </div>
                         <span className=''>
