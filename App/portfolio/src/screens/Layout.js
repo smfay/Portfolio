@@ -49,7 +49,7 @@ const Layout = () => {
                 </nav>
                 <Home className='z-50' />
                 <div class="fixed -z-50 left-0 top-0 flex w-screen h-screen overflow-hidden">
-                    <Background3D />
+                    <Background3D className='fixed' />
                 </div>
             </div>
         </>

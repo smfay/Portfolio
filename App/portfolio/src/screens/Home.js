@@ -7,7 +7,7 @@ const Home = () => {
         <>
             <div className='text-left p-1'>
                 <h2 id='card' className='rounded my-3 p-2'>W O R K S :</h2>
-                <section className='text-black grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-6 auto-rows-max'>
+                <section className='text-black grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-3 auto-rows-max'>
                     <div id='card' className='grid grid-cols-1 md:grid-cols-2 p-1 rounded'>
                         <header className='m-2'>
                             <h2 className='text-xl font-medium'>Development</h2>

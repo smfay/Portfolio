@@ -8,7 +8,7 @@ function App() {
   return (
     <>
       {/* <img src="https://smfay.github.io/portfolio/images/bg.svg" className="fixed -z-50 w-[100vmax]" /> */}
-      <Layout className="w-screen overflow-x-hidden" />
+      <Layout />
     </>
   );
 }
