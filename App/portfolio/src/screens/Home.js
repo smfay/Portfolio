@@ -7,7 +7,7 @@ const Home = () => {
         <>
             <div className='p-1 font-medium'>
                 <h2 className='rounded my-3 p-2 text-xl text-center font-regular'>P O R T F O L I O</h2>
-                <section className='font-medium p-8 text-black grid gap-8 rounded auto-rows-auto grid-cols-1 md:grid-cols-2'>
+                <section className='font-medium p-3 md:p-8 text-black grid gap-8 rounded auto-rows-auto grid-cols-1 md:grid-cols-2'>
                     <div id='card' className='grid grid-cols-1 md:grid-cols-2 p-1 rounded'>
                         <header className='p-2'>
                             <h2 className='text-2xl font-semibold'>GroupDrive</h2>
