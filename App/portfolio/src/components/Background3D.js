@@ -24,9 +24,9 @@ const Background3D = () => {
             <directionalLight
                 position={[10, 0, 0]}
                 intensity={0.8}
-                color='pink'
+                color='green'
             />
-            <ambientLight intensity={0.1} color='orange' />
+            <ambientLight intensity={0.1} color='blue' />
             <pointLight position={[0, 0, 0]} intensity={1} color='red' />
 
             <SpinningMesh position={[0, 0, -10]} args={[20, 2.5, 700, 20]} />

@@ -31,10 +31,10 @@ const Layout = () => {
 
     return (
         <>
-            <div id='card' className='overflow-hidden text-black flex flex-col justify-start m-2 md:mx-10 lg:mx-32 w-fit transition-all duration-700 ease-in-out p-1 rounded'>
-                <nav class="z-50">
+            <div className='text-black flex flex-col justify-start m-2 md:mx-10 lg:mx-32 w-fit transition-all duration-700 ease-in-out p-1 rounded'>
+                <nav class="z-50 p-1 rounded">
                     <section class='flex justify-between'>
-                        <div id='card' className='p-3 rounded'>
+                        <div className='p-3 rounded'>
                             <h1 class='w-1/2 text-4xl font-medium transition-all duration-100 ease-in-out' >Sean|Fay</h1>
                             <ul>
                                 <li class='transition-all duration-100 ease-in-out'>multi-diciplinary/</li>
@@ -43,7 +43,7 @@ const Layout = () => {
                             </ul>
                         </div>
                         <span className=''>
-                            <animated.img id='card' style={props} src='https://smfay.github.io/portfolio/images/logo.svg' alt="logo" className='h-20 md:h-32 transition-all duration-500 ease-in-out p-3 rounded' />
+                            <animated.img style={props} src='https://smfay.github.io/portfolio/images/logo.svg' alt="logo" className='h-20 md:h-32 transition-all duration-500 ease-in-out p-3 rounded' />
                         </span>
                     </section>
                 </nav>
