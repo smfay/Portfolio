@@ -7,7 +7,7 @@ const Home = () => {
         <>
             <div className='text-left p-1 font-medium'>
                 <h2 className='rounded my-3 p-2'>W O R K S :</h2>
-                <section id='card' className='p-3 text-black grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-3 auto-rows-max rounded'>
+                <section className='p-8 text-black grid gap-8 rounded auto-rows-auto grid-cols-1 md:grid-cols-2'>
                     <div id='card' className='grid grid-cols-1 md:grid-cols-2 p-1 rounded'>
                         <header className='m-2'>
                             <h2 className='text-2xl font-medium'>Matterzone</h2>
@@ -46,7 +46,6 @@ const Home = () => {
                             <img src='https://smfay.github.io/portfolio/images/matter.png' alt="matter" className='object-cover grow' />
                         </section>
                     </div>
-                    <div className='col-span-full h-20'></div>
                 </section>
             </div>
         </>

@@ -31,11 +31,11 @@ const Layout = () => {
 
     return (
         <>
-            <div className='text-black flex flex-col justify-start m-2 md:mx-10 lg:mx-32 w-fit transition-all duration-700 ease-in-out p-1 rounded'>
+            <div id='card' className='overflow-hidden absolute text-black flex flex-col m-2 lg:mx-64 justify-start  w-fit transition-all duration-700 ease-in-out p-1 rounded'>
                 <nav class="z-50 p-1 rounded">
                     <section class='flex justify-between'>
                         <div className='p-3 rounded'>
-                            <h1 class='w-1/2 text-4xl font-medium transition-all duration-100 ease-in-out' >Sean|Fay</h1>
+                            <h1 class='w-1/2 text-4xl md:text-6xl font-medium transition-all duration-100 ease-in-out' >Sean|Fay</h1>
                             <ul>
                                 <li class='transition-all duration-100 ease-in-out'>multi-diciplinary/</li>
                                 <li class='transition-all duration-200 ease-in-out'>UI/UX designer/</li>
