@@ -31,7 +31,7 @@ const Layout = () => {
 
     return (
         <>
-            <div id='card' className='overflow-hidden absolute text-black flex flex-col m-2 lg:mx-64 justify-start  w-fit transition-all duration-700 ease-in-out p-1 rounded'>
+            <div id='card' className='bg-grid overflow-hidden absolute text-black flex flex-col m-2 lg:mx-[10vw] justify-start  w-fit transition-all duration-700 ease-in-out p-1 rounded'>
                 <nav class="z-50 p-1 rounded">
                     <section class='flex justify-between'>
                         <div className='p-3 rounded'>
