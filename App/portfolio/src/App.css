@@ -29,7 +29,7 @@ html,
 }
 
 #card {
-  background: rgb(255,255,255,0.6);
+  background: rgb(255,255,255,0.4);
   /* border: 1px solid rgb(0,0,0,1); */
   filter: drop-shadow(10px 10px 5px rgb(56,56,98,0.5));
   box-shadow: inset -10px -10px 30px rgb(197,81,121,0.2);
