@@ -18,8 +18,8 @@ const Background3D = () => {
     }
 
     return (
-        <Canvas class='w-full h-full'>
-            <PerspectiveCamera makeDefault fov={25} position={[0, 0, 50]} />
+        <Canvas >
+            <PerspectiveCamera makeDefault fov={20} position={[0, 0, 50]} />
             <fog attach="fog" args={["rgb(220,220,220)", 30, 80]} />
             <directionalLight
                 position={[10, 0, 0]}
@@ -29,7 +29,7 @@ const Background3D = () => {
             <ambientLight intensity={0.1} color='blue' />
             <pointLight position={[0, 0, 0]} intensity={1} color='red' />
 
-            <SpinningMesh position={[0, 0, -10]} args={[20, 2.5, 700, 20]} />
+            <SpinningMesh position={[0, 0, -10]} args={[20, 3, 700, 20]} />
         </Canvas>
     )
 }

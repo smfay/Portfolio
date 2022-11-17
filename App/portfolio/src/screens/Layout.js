@@ -31,12 +31,12 @@ const Layout = () => {
 
     return (
         <>
-            <div id='card' className='bg-grid overflow-hidden absolute text-black flex flex-col m-2 lg:mx-[10vw] justify-start  w-fit transition-all duration-700 ease-in-out p-1 rounded'>
+            <div id='card' className='bg-grid overflow-hidden text-black flex flex-col m-2 lg:mx-[10vw] justify-start  w-fit transition-all duration-700 ease-in-out p-1 rounded'>
                 <nav class="z-50 p-1 rounded">
                     <section class='flex justify-between'>
                         <div className='p-3 rounded'>
-                            <h1 class='w-1/2 text-4xl md:text-6xl font-medium transition-all duration-100 ease-in-out' >Sean|Fay</h1>
-                            <ul>
+                            <h1 class='w-1/2 text-4xl md:text-6xl font-semibold transition-all duration-100 ease-in-out' >Sean|Fay</h1>
+                            <ul className='font-medium'>
                                 <li class='transition-all duration-100 ease-in-out'>multi-diciplinary/</li>
                                 <li class='transition-all duration-200 ease-in-out'>UI/UX designer/</li>
                                 <li class='transition-all duration-300 ease-in-out'>web developer/</li>
@@ -48,10 +48,13 @@ const Layout = () => {
                     </section>
                 </nav>
                 <Home className='z-50' />
-                <div class="fixed -z-50 left-0 top-0 flex w-screen h-screen overflow-hidden">
-                    <Background3D className='fixed' />
+                <div class="w-screen h-full overflow-hidden flex left-0 top-0 -z-50 fixed">
+                    <Background3D id='render' />
                 </div>
             </div>
+            {/* <section id='card'>
+                <h2>Sean Fay 2022</h2>
+            </section> */}
         </>
     )
 }
